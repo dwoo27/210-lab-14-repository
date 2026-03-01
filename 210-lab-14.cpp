@@ -3,7 +3,7 @@
 using namespace std;
 
 class Color {
-	int red;
+	int red; //private by default
 	int green;
 	int blue;
 
@@ -21,7 +21,26 @@ public:
 
 int main()
 {
+	Color c1, c2, c3; //creating color objects
 	
+	c1.setRed(154); //manually populating object data
+	c1.setGreen(31);
+	c1.setBlue(93);
+
+	c2.setRed(0);
+	c2.setGreen(0);
+	c2.setBlue(255);
+
+	c3.setRed(87);
+	c3.setGreen(249);
+	c3.setBlue(142);
+
+	cout << "   Red   Green   Blue" << endl; 
+	cout << "----------------------" << endl;
+
+	c1.print(); //output values
+	c2.print();
+	c3.print();
 }
 
 void Color::print() {
