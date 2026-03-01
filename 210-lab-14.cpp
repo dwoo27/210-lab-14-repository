@@ -7,7 +7,6 @@ class Color {
 	int blue;
 
 public:
-	void input();
 	void coutColors();
 
 	int getRed() const; //accessors
